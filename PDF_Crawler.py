@@ -9,7 +9,7 @@ NumPages = object.getNumPages()
 txt1 = input("Enter text to find: ")
 String = txt1
 
-for i in range(0, NumPages):
+for i in range(NumPages):
     PageObj = object.getPage(i)
     print("this is page " + str(i)) 
     Text = PageObj.extractText() 
